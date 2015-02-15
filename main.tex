@@ -1,20 +1,29 @@
-\documentclass[a4paper,parskip]{scrartcl}
+\documentclass[a4paper, parskip, twoside]{scrartcl}
 
 \input{preamble.tex}
-
+\usepackage{lipsum}
 \begin{document}
-\maketitle
+%\maketitle
+%\thispagestyle{empty}
+\input{title}
 
 \newpage
 \tableofcontents
+\thispagestyle{empty}
 
 \newpage
 \input{1-inledning/inledning.tex}
+\lipsum[1]
 \input{2-modell/modell.tex}
+\lipsum[2]
 \input{3-metoder/metoder.tex}
+\lipsum[3]
 \input{4-indata/indata.tex}
+\lipsum[4]
 \input{5-resultat/resultat.tex}
+\lipsum[5]
 \input{6-diskussion/diskussion.tex}
+\lipsum[6]
 \input{7-referenser/referenser.tex}
 
 \newpage %Forces appendix onto next page
