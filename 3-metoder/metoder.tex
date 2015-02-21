@@ -1,3 +1,4 @@
+% !TeX spellcheck = sv_SE
 \section{Numeriska metoder}
 \label{sec:metoder}
 
@@ -37,7 +38,7 @@
 Till skillnad från \textsc{miniprojekt 1} där vi med ordinära
 differentialekvationer arbetade deterministiskt, använde vi nu en
 stokastisk metod. Detta krävde dock en omskrivning av den matematiska
-modellen (se avsnitt ??).
+modellen (se avsnitt 2).
 
 Den ursprungliga kontinuerliga och deterministiska metoden baserades på
 lösning av differentialekvationer som beskrev koncentrationen av de intressanta
@@ -51,7 +52,7 @@ reaktionshastigheter har vi sannolikheter (propensiteter) för varje reaktion.
 
 \subsection{Hitta tiden till nästa reaktion}
 
-Först initierar vi vårt tillstånd med initialvärden för tiden $t$ (\lstinline|t|) och tillståndet $x$ (\lstinline|x|) enligt avsnitt~??. Sedan beräknar vi propensiteterna $w_r$ enligt \lstinline|w = prop_vilar(x, b)| där \lstinline|b| är en parametervektor enligt avsnitt~?? och \lstinline|w| är en $18 \times 1$-kolumnvektor. Vi kan då beräkna summan $\beta$ som \lstinline|beta = sum(w)|.
+Först initierar vi vårt tillstånd med initialvärden för tiden $t$ (\lstinline|t|) och tillståndet $x$ (\lstinline|x|) enligt avsnitt~4. Sedan beräknar vi propensiteterna $w_r$ enligt \lstinline|w = prop_vilar(x, b)| där \lstinline|b| är en parametervektor enligt avsnitt~4 och \lstinline|w| är en $18 \times 1$-kolumnvektor. Vi kan då beräkna summan $\beta$ som \lstinline|beta = sum(w)|.
 
 Sedan slumpar vi fram $\tau$ med hjälp av att invertera den kumulativa sannolikhetsfördelningen. Detta görs med ett slumptal $u_1 \sim U[0,1]$ enligt
 \begin{equation}
